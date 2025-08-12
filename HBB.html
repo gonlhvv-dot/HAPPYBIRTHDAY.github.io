@@ -133,7 +133,6 @@ function createBalloons(count) {
       yoyo: true,
       ease: Sine.easeInOut
     });
-
     // Balloon rotation (rotate the balloon to simulate wind)
     TweenMax.to(balloon, 3, {
       rotation: Math.random() * 10, // Random rotation for realism
@@ -141,7 +140,6 @@ function createBalloons(count) {
       yoyo: true,
       ease: Sine.easeInOut
     });
-
     // Balloon scale (simulate inflation and deflation)
     TweenMax.to(balloon, 3, {
       scale: 1.05,
@@ -149,7 +147,6 @@ function createBalloons(count) {
       yoyo: true,
       ease: Sine.easeInOut
     });
-
     // String sway (horizontal + vertical sway for the string)
     TweenMax.to(string, 1.5, {
       rotation: Math.random() * 10, // Random rotation of the string
@@ -162,8 +159,6 @@ function createBalloons(count) {
     });
   }
 }
-
-
     // Click to show message and balloons
     heart.addEventListener("click", () => {
       TweenMax.to(message, 1, {
